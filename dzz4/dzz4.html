@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dzz4</title>
+    <style>
+         div {
+     background-color: wheat;
+     background-size: 100% 100vh;
+     width: 70%;
+     min-width: 500px;
+     min-height: 160px;
+     margin: 10px auto;
+     padding: 10px;
+
+     border: 1px solid black;
+     border-radius: 5px;
+     text-align: center;
+ }
+ #login-form input[type="login"], 
+ #login-form input[type="password"],
+ #login-form input[type="email"],
+ #login-form input[type="date"] {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5px;
+}
+form{
+    width: 50%;
+    margin: 0 25%;
+}
+    </style>
+</head>
+<body>
+    <h1>Hello there</h1>
+    <div>
+        <form id="login-form">
+            <h4>Форма регистрации</h4>
+            <input type="login" placeholder="Введите логин" name="login" class="login" required>
+            <input type="password" placeholder="Введите пароль" name="password" class="password" required>
+            <input type="email" placeholder="Введите email" name="email" class="email" required>
+            <input type="date" placeholder="Введите дату рождения" name="birth" class="birth" required> <!-- required- обязательно для ввода, required minlength- обязательное мин кол символов -->
+            <br><br>
+            <button type="submit" id="submit-btn" onclick=userInformation()>Submit</button>
+        </form>
+    </div>
+
+    <script src="./dzz4.js"></script>
+    
+</body>
+</html>
